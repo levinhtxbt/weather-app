@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GeoService.Controllers
 {
     [ApiController]
-    [Route("geocoding")]
+    [Route("geo")]
     public class GeocodingController : ControllerBase
     {
         private readonly ILogger<GeocodingController> _logger;

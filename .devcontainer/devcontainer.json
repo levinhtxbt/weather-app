@@ -3,7 +3,7 @@
 {
     "name": "C# (.NET)",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": "mcr.microsoft.com/devcontainers/dotnet:7.0-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:7.0",
     "features": {
         "ghcr.io/devcontainers/features/dotnet:1": {}
     },
@@ -43,8 +43,15 @@
 				"ms-dotnettools.vscode-dotnet-sdk",
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
-				"zhuangtongfa.Material-theme"
-			]
+				"zhuangtongfa.Material-theme",
+				"humao.rest-client",
+				"redhat.vscode-xml",
+				"GitHub.copilot"
+			],
+            "settings": {
+                "workbench.colorTheme": "One Dark Pro Darker",
+                "workbench.iconTheme": "vscode-icons"
+            }
         }
     }
 
