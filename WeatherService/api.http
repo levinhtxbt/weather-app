@@ -1,0 +1,8 @@
+### Get current weather
+GET http://localhost:5019/weather/daily?lat=44.34&lon=10.99
+Content-Type: application/json
+
+
+### Get Daily forecast
+GET http://localhost:5019/weather/daily?lat=44.34&lon=10.99&cnt=3
+Content-Type: application/json

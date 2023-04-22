@@ -1,0 +1,6 @@
+GET http://api.openweathermap.org/geo/1.0/direct?q=Ho Chi Minh&limit=5&appid=66dd82dc3ad4ce128bbadc979c261787
+Content-Type: application/json
+
+###
+GET http://localhost:5001/geocoding/city?city=Ho Chi Minh&limit=5
+Content-Type: : application/json
