@@ -41,7 +41,9 @@
 				"schneiderpat.aspnet-helper",
 				"ms-dotnettools.vscode-dotnet-runtime",
 				"ms-dotnettools.vscode-dotnet-sdk",
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"vscode-icons-team.vscode-icons",
+				"zhuangtongfa.Material-theme"
 			]
         }
     }
