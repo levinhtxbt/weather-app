@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService", "WeatherSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoService", "GeoService\GeoService.csproj", "{82D802EE-C1D2-4160-B468-4D9019F0C52D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.LoadBalancing", "Gateway.LoadBalancing\Gateway.LoadBalancing.csproj", "{86EBA634-57E9-472C-8B43-63556D7924E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{82D802EE-C1D2-4160-B468-4D9019F0C52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82D802EE-C1D2-4160-B468-4D9019F0C52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82D802EE-C1D2-4160-B468-4D9019F0C52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EBA634-57E9-472C-8B43-63556D7924E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EBA634-57E9-472C-8B43-63556D7924E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EBA634-57E9-472C-8B43-63556D7924E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EBA634-57E9-472C-8B43-63556D7924E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
