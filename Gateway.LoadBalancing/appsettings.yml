@@ -1,0 +1,4 @@
+eureka:
+  client:
+    shouldRegisterWithEureka: false
+    serviceUrl: http://172.17.0.2:8761/eureka/
