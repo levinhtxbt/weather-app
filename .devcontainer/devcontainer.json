@@ -8,25 +8,16 @@
     "service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "features": {
-        "ghcr.io/devcontainers/features/dotnet:1": {}
+        "ghcr.io/devcontainers/features/dotnet:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/node:1" : {}
     },
 
     // Features to add to the dev container. More info: https://containers.dev/features.
     // "features": {},
 
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [5100, 5000, 5001],
-    "portsAttributes": {
-        "5100": {
-            "protocol": "https"
-        },
-        "5000": {
-            "protocol": "http"
-        },
-        "5001": {
-            "protocol": "http"
-        }
-    },
+    "forwardPorts": [5100, 5000, 5001, 5432],
 
     // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": "dotnet restore",
@@ -37,20 +28,21 @@
         "vscode": {
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
-                "streetsidesoftware.code-spell-checker",
-                "ms-dotnettools.csharp",
-                "patbenatar.advanced-new-file",
-                "formulahendry.dotnet",
-                "schneiderpat.aspnet-helper",
-                "ms-dotnettools.vscode-dotnet-runtime",
-                "ms-dotnettools.vscode-dotnet-sdk",
-                "esbenp.prettier-vscode",
-                "vscode-icons-team.vscode-icons",
-                "zhuangtongfa.Material-theme",
-                "humao.rest-client",
-                "redhat.vscode-xml",
-                "GitHub.copilot"
-            ],
+				"streetsidesoftware.code-spell-checker",
+				"ms-dotnettools.csharp",
+				"patbenatar.advanced-new-file",
+				"formulahendry.dotnet",
+				"schneiderpat.aspnet-helper",
+				"ms-dotnettools.vscode-dotnet-runtime",
+				"ms-dotnettools.vscode-dotnet-sdk",
+				"esbenp.prettier-vscode",
+				"vscode-icons-team.vscode-icons",
+				"zhuangtongfa.Material-theme",
+				"humao.rest-client",
+				"redhat.vscode-xml",
+				"GitHub.copilot",
+				"mutantdino.resourcemonitor"
+			],
             "settings": {
                 "workbench.colorTheme": "One Dark Pro Darker",
                 "workbench.iconTheme": "vscode-icons"
