@@ -6,7 +6,7 @@
     // "image": "mcr.microsoft.com/devcontainers/dotnet:7.0",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "features": {
         "ghcr.io/devcontainers/features/dotnet:1": {}
     },
