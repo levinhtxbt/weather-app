@@ -1,1 +1,9 @@
 OpenWeatherAPIKey: 66dd82dc3ad4ce128bbadc979c261787
+eureka:
+  client:
+    shouldRegisterWithEureka: true
+    serviceUrl: http://172.17.0.2:8761/eureka/
+  # instance:
+  #   port: 5000
+  #   ipAddress: localhost
+  #   preferIpAddress: true

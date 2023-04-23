@@ -1,10 +1,12 @@
 using GeoService;
 using Refit;
+using Steeltoe.Discovery.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddYamlFile("appsettings.yml", optional: true, reloadOnChange: true);
 
 // Add services to the container.
+builder.Services.AddDiscoveryClient();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
