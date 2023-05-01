@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddRefitClient<IOpenWeatherApi>()
     .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5"));
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline. 
