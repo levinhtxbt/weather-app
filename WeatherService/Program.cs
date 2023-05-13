@@ -9,7 +9,7 @@ builder.Configuration.AddYamlFile("appsettings.yml", optional: true, reloadOnCha
 builder.Services.AddDiscoveryClient();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options => options.EnableAnnotations());
 builder.Services.AddRefitClient<IOpenWeatherApi>()
     .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://api.openweathermap.org/data/2.5"));
 

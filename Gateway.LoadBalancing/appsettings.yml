@@ -1,4 +1,19 @@
 eureka:
   client:
     shouldRegisterWithEureka: false
-    serviceUrl: http://172.17.0.2:8761/eureka/
+    serviceUrl: http://localhost:8761/eureka/
+
+ReverseProxy:
+    Routes:
+        weather-service:
+            ClusterId: WEATHERSERRVICE
+            Match:
+                Path: '/v1/weather/{**catch-all}'
+            Transforms:
+                - PathRemovePrefix: '/v1'
+        geo-service:
+            ClusterId: GEOSERVICE
+            Match:
+                Path: '/v1/geo/{**catch-all}'
+            Transforms:
+                - PathRemovePrefix: '/v1'

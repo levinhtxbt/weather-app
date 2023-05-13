@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Geo Service (Debug)",
             "type": "coreclr",
@@ -31,6 +32,24 @@
             "program": "${workspaceFolder}/Gateway/bin/Debug/net7.0/Gateway.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Gateway",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {}
+        },
+        {
+            "name": "Gateway Loadbalancing (Debug)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Gateway.LoadBalancing/bin/Debug/net7.0/Gateway.LoadBalancing.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Gateway.LoadBalancing",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
